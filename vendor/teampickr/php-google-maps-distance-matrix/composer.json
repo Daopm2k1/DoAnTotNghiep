@@ -1,0 +1,40 @@
+{
+  "name": "teampickr/php-google-maps-distance-matrix",
+  "description": "PHP Implementation of the Google Maps Distance Matrix API",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jonathan Martin",
+      "email": "jm@pickr.works"
+    }
+  ],
+  "require": {
+    "php": ">7.2",
+    "guzzlehttp/guzzle": "^7.0.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5.0",
+    "vlucas/phpdotenv": "^5.2.0",
+    "illuminate/support": ">5.4"
+  },
+  "suggest": {
+    "illuminate/support": "Allows you to use this package from within Laravel"
+  },
+  "autoload": {
+    "psr-4": {
+      "TeamPickr\\DistanceMatrix\\": "src/",
+      "TeamPickr\\DistanceMatrix\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TeamPickr\\DistanceMatrix\\Frameworks\\Laravel\\DistanceMatrixServiceProvider"
+      ],
+      "aliases": {
+        "DistanceMatrix": "TeamPickr\\DistanceMatrix\\Frameworks\\Laravel\\DistanceMatrix"
+      }
+    }
+  }
+}

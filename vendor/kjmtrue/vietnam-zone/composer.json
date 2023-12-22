@@ -1,0 +1,29 @@
+{
+    "name": "kjmtrue/vietnam-zone",
+    "description": "VietNam Zone",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KimTrien",
+            "email": "kimtrien@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3.1|^7.0|^8",
+        "maatwebsite/excel": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kjmtrue\\VietnamZone\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kjmtrue\\VietnamZone\\ServiceProvider"
+            ]
+        }
+    }
+}
